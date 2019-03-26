@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <title>Spaceship Gaming - New Users Bonus</title>
+
+    <script>
+      var settings = {
+        async: true,
+        url: "data.json",
+        method: "GET"
+      };
+
+      $.ajax(settings).done(function(response) {
+        console.log(response);
+
+        var content = response.banner.one;
+        $("#bannerOne").append(content);
+
+        var content = response.banner.btnone;
+        $("#bannerBtnone").append(content);
+
+        var content = response.banner.two;
+        $("#bannerTwo").append(content);
+
+        var content = response.banner.btntwo;
+        $("#bannerBtntwo").append(content);
+
+        var content = response.banner.three;
+        $("#bannerThree").append(content);
+
+        var content = response.banner.btnthree;
+        $("#bannerBtnthree").append(content);
+
+        var content = response.banner.four;
+        $("#bannerFour").append(content);
+
+        var content = response.banner.btnfour;
+        $("#bannerBtnfour").append(content);
+
+        var content = response.banner.five;
+        $("#bannerFive").append(content);
+
+      });
+    </script>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/css/main.css" />  
+</head>
+  <body onload="getWelcome()">
+    <div id="topbar">
+      <div id="textbar">Welcome Jess2223, thanks for joining.</div id="textbar">
+      <a href="#" class="close" onClick="this.parentNode.style.display = 'none';
+      "></a>
+    </div>
+
+    <h1>ALSO PICK 1 OF 2 DEPOSIT OFFERS</h1>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <main>
+            <section id="card" style="border-right: 74px solid #E9F2DF;">
+              <ul>
+                <li>
+
+
+                  <img src="img/tick.png" />
+
+                  <strong></strong>
+                  <strong
+                    ><section id="text">
+                      <div id="bannerOne"></div></section
+                  ></strong>
+                </li>
+
+                <a class="btn btn-1" href="#"><div id="bannerBtnone"></div></a>
+              </ul>
+            </section>
+          </main>
+        </div>
+        <div class="col-sm">
+          <main>
+            <section id="card" style="border-right: 74px solid #E9F2DF;">
+              <ul>
+                <li>
+        
+                  <img src="img/tick.png" />
+                  <strong
+                    ><section id="text">
+                      <div id="bannerTwo"></div></section
+                  ></strong>
+                </li>
+                <a class="btn btn-1" href="#"><div id="bannerBtntwo"></div></a>
+              </ul>
+            </section>
+          </main>
+        </div>
+      </div>
+    </div>
+    <h2> 2 BONUSES FOR YOU TO USE NOW</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <main>
+            <section id="card" style="border-right: 74px solid #FFECD6;">
+              <ul>
+                <li>
+                  <img src="img/clock.png"/>
+                  <strong
+                    ><section id="text">
+                      <div id="bannerThree"></div></section
+                  ></strong>
+                </li>
+                <a class="btn btn-3" href="#"
+                  ><div id="bannerBtnthree"></div
+                ></a>
+              </ul>
+            </section>
+          </main>
+        </div>
+        <div class="col-sm">
+          <main>
+            <section id="card" style="border-right: 74px solid #FFECD6;">
+              <ul>
+                <li>
+                 
+                  <img src="img/clock.png" />
+                  <strong
+                    ><section id="text">
+                      <div id="bannerFour"></div></section
+                  ></strong>
+                </li>
+                <a class="btn btn-2" href="#"><div id="bannerBtnfour"></div></a>
+              </ul>
+            </section>
+          </main>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <main>
+            <section id="card" style="padding-top: 25px; height: 150px; border-right: 74px solid #7A64CC; opacity: 0.30;">
+              <ul>
+                <li>
+
+
+                  <img src="img/lock.svg" style="margin-top: 15px;"/>
+
+                  <strong></strong>
+                  <strong
+                    ><section id="text">
+                      <div id="bannerFive"></div></section
+                  ></strong>
+                </li>
+
+              </ul>
+            </section>
+          </main>
+        </div>
+        <div class="col-sm">
+          <main>
+            <section id="card" style="padding-top: 25px; height: 150px; border-right: 74px solid #7A64CC; opacity: 0;">
+              <ul>
+                <li>
+                  <strong></strong>
+                  <strong
+                    ><section id="text>
+                      <div id="bannerFive"></div></section
+                  ></strong>
+                </li>
+              </ul>
+            </section>
+          </main>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
